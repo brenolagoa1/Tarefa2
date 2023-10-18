@@ -1,0 +1,202 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="pt-BR">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=11"/>
+<meta name="generator" content="Doxygen 1.9.8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>tarefa2_cgraf: Código-Fonte de Tarefa2/Tarefa2.cpp</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr id="projectrow">
+  <td id="projectalign">
+   <div id="projectname">tarefa2_cgraf<span id="projectnumber">&#160;1.0</span>
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Gerado por Doxygen 1.9.8 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+var searchBox = new SearchBox("searchBox", "search/",'.html');
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function() {
+  initMenu('',true,false,'search.php','Busca');
+  $(document).ready(function() { init_search(); });
+});
+/* @license-end */
+</script>
+<div id="main-nav"></div>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(document).ready(function() { init_codefold(0); });
+/* @license-end */
+</script>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<div id="MSearchResults">
+<div class="SRPage">
+<div id="SRIndex">
+<div id="SRResults"></div>
+<div class="SRStatus" id="Loading">Carregando...</div>
+<div class="SRStatus" id="Searching">Procurando...</div>
+<div class="SRStatus" id="NoMatches">Nenhuma entrada encontrado</div>
+</div>
+</div>
+</div>
+</div>
+
+<div id="nav-path" class="navpath">
+  <ul>
+<li class="navelem"><a class="el" href="dir_9f8f16fc297049156385499e49ebec9b.html">Tarefa2</a></li>  </ul>
+</div>
+</div><!-- top -->
+<div class="header">
+  <div class="headertitle"><div class="title">Tarefa2.cpp</div></div>
+</div><!--header-->
+<div class="contents">
+<a href="_tarefa2_8cpp.html">Ir para a documentação desse arquivo.</a><div class="fragment"><div class="line"><a id="l00001" name="l00001"></a><span class="lineno">    1</span><span class="preprocessor">#include &lt;iostream&gt;</span></div>
+<div class="line"><a id="l00002" name="l00002"></a><span class="lineno">    2</span><span class="preprocessor">#include &lt;cmath&gt;</span></div>
+<div class="line"><a id="l00003" name="l00003"></a><span class="lineno">    3</span><span class="preprocessor">#include &quot;<a class="code" href="matvec_8h.html">matvec.h</a>&quot;</span></div>
+<div class="line"><a id="l00004" name="l00004"></a><span class="lineno">    4</span> </div>
+<div class="foldopen" id="foldopen00011" data-start="{" data-end="}">
+<div class="line"><a id="l00011" name="l00011"></a><span class="lineno"><a class="line" href="_tarefa2_8cpp.html#af383c2d94ac32aad3f4930cc693684e0">   11</a></span>std::ostream&amp; <a class="code hl_function" href="_tarefa2_8cpp.html#af383c2d94ac32aad3f4930cc693684e0">operator&lt;&lt;</a>(std::ostream&amp; out, <span class="keyword">const</span> <a class="code hl_class" href="classvec2.html">vec2</a>&amp; v) {</div>
+<div class="line"><a id="l00012" name="l00012"></a><span class="lineno">   12</span>    out &lt;&lt; <span class="stringliteral">&quot;[&quot;</span> &lt;&lt; v.<a class="code hl_variable" href="classvec2.html#ac38b8dcc3bc5eb2b4fb6971638af64d1">x</a> &lt;&lt; <span class="stringliteral">&quot;, &quot;</span> &lt;&lt; v.<a class="code hl_variable" href="classvec2.html#a77fcc56ac7af5cee53b8ca789dacac1f">y</a> &lt;&lt; <span class="stringliteral">&quot;]&quot;</span>;</div>
+<div class="line"><a id="l00013" name="l00013"></a><span class="lineno">   13</span>    <span class="keywordflow">return</span> out;</div>
+<div class="line"><a id="l00014" name="l00014"></a><span class="lineno">   14</span>}</div>
+</div>
+<div class="line"><a id="l00015" name="l00015"></a><span class="lineno">   15</span> </div>
+<div class="foldopen" id="foldopen00022" data-start="{" data-end="}">
+<div class="line"><a id="l00022" name="l00022"></a><span class="lineno"><a class="line" href="_tarefa2_8cpp.html#aa4917947434c379c90a36856daf82301">   22</a></span>std::ostream&amp; <a class="code hl_function" href="_tarefa2_8cpp.html#af383c2d94ac32aad3f4930cc693684e0">operator&lt;&lt;</a>(std::ostream&amp; out, <span class="keyword">const</span> <a class="code hl_class" href="classvec4.html">vec4</a>&amp; v) {</div>
+<div class="line"><a id="l00023" name="l00023"></a><span class="lineno">   23</span>    out &lt;&lt; <span class="stringliteral">&quot;[&quot;</span> &lt;&lt; v.<a class="code hl_variable" href="classvec4.html#adfb7f5a598e9cbc80b2bd350e8a2f735">x</a> &lt;&lt; <span class="stringliteral">&quot;, &quot;</span> &lt;&lt; v.<a class="code hl_variable" href="classvec4.html#ab3da8438358ac40c404ac4eec23019c6">y</a> &lt;&lt; <span class="stringliteral">&quot;, &quot;</span> &lt;&lt; v.<a class="code hl_variable" href="classvec4.html#a680c373b827044fe641d812f143e2075">z</a> &lt;&lt; <span class="stringliteral">&quot;, &quot;</span> &lt;&lt; v.<a class="code hl_variable" href="classvec4.html#a33b4fabb2c9b0fa89af92b86db82c16f">w</a> &lt;&lt; <span class="stringliteral">&quot;]&quot;</span>;</div>
+<div class="line"><a id="l00024" name="l00024"></a><span class="lineno">   24</span>    <span class="keywordflow">return</span> out;</div>
+<div class="line"><a id="l00025" name="l00025"></a><span class="lineno">   25</span>}</div>
+</div>
+<div class="line"><a id="l00026" name="l00026"></a><span class="lineno">   26</span> </div>
+<div class="foldopen" id="foldopen00033" data-start="{" data-end="}">
+<div class="line"><a id="l00033" name="l00033"></a><span class="lineno"><a class="line" href="_tarefa2_8cpp.html#ad2760b112984d6fde1d0fc32321df449">   33</a></span>std::ostream&amp; <a class="code hl_function" href="_tarefa2_8cpp.html#af383c2d94ac32aad3f4930cc693684e0">operator&lt;&lt;</a>(std::ostream&amp; out, <span class="keyword">const</span> <a class="code hl_class" href="classmat2.html">mat2</a>&amp; m) {</div>
+<div class="line"><a id="l00034" name="l00034"></a><span class="lineno">   34</span>    out &lt;&lt; <span class="stringliteral">&quot;[&quot;</span> &lt;&lt; m.<a class="code hl_variable" href="classmat2.html#a9fb5cc9e6bfc7e3e0031c147952ea46d">data</a>[0][0] &lt;&lt; <span class="stringliteral">&quot;, &quot;</span> &lt;&lt; m.<a class="code hl_variable" href="classmat2.html#a9fb5cc9e6bfc7e3e0031c147952ea46d">data</a>[0][1] &lt;&lt; <span class="stringliteral">&quot;]\n&quot;</span>;</div>
+<div class="line"><a id="l00035" name="l00035"></a><span class="lineno">   35</span>    out &lt;&lt; <span class="stringliteral">&quot;[&quot;</span> &lt;&lt; m.<a class="code hl_variable" href="classmat2.html#a9fb5cc9e6bfc7e3e0031c147952ea46d">data</a>[1][0] &lt;&lt; <span class="stringliteral">&quot;, &quot;</span> &lt;&lt; m.<a class="code hl_variable" href="classmat2.html#a9fb5cc9e6bfc7e3e0031c147952ea46d">data</a>[1][1] &lt;&lt; <span class="stringliteral">&quot;]&quot;</span>;</div>
+<div class="line"><a id="l00036" name="l00036"></a><span class="lineno">   36</span>    <span class="keywordflow">return</span> out;</div>
+<div class="line"><a id="l00037" name="l00037"></a><span class="lineno">   37</span>}</div>
+</div>
+<div class="line"><a id="l00038" name="l00038"></a><span class="lineno">   38</span> </div>
+<div class="foldopen" id="foldopen00045" data-start="{" data-end="}">
+<div class="line"><a id="l00045" name="l00045"></a><span class="lineno"><a class="line" href="_tarefa2_8cpp.html#afcfb511abd8a6c761c0c37f3a9a32e7a">   45</a></span>std::ostream&amp; <a class="code hl_function" href="_tarefa2_8cpp.html#af383c2d94ac32aad3f4930cc693684e0">operator&lt;&lt;</a>(std::ostream&amp; out, <span class="keyword">const</span> <a class="code hl_class" href="classmat3.html">mat3</a>&amp; m) {</div>
+<div class="line"><a id="l00046" name="l00046"></a><span class="lineno">   46</span>    out &lt;&lt; <span class="stringliteral">&quot;[&quot;</span> &lt;&lt; m.<a class="code hl_variable" href="classmat3.html#af330dacb197ed05c279b4fa8974eac50">data</a>[0][0] &lt;&lt; <span class="stringliteral">&quot;, &quot;</span> &lt;&lt; m.<a class="code hl_variable" href="classmat3.html#af330dacb197ed05c279b4fa8974eac50">data</a>[0][1] &lt;&lt; <span class="stringliteral">&quot;, &quot;</span> &lt;&lt; m.<a class="code hl_variable" href="classmat3.html#af330dacb197ed05c279b4fa8974eac50">data</a>[0][2] &lt;&lt; <span class="stringliteral">&quot;]\n&quot;</span>;</div>
+<div class="line"><a id="l00047" name="l00047"></a><span class="lineno">   47</span>    out &lt;&lt; <span class="stringliteral">&quot;[&quot;</span> &lt;&lt; m.<a class="code hl_variable" href="classmat3.html#af330dacb197ed05c279b4fa8974eac50">data</a>[1][0] &lt;&lt; <span class="stringliteral">&quot;, &quot;</span> &lt;&lt; m.<a class="code hl_variable" href="classmat3.html#af330dacb197ed05c279b4fa8974eac50">data</a>[1][1] &lt;&lt; <span class="stringliteral">&quot;, &quot;</span> &lt;&lt; m.<a class="code hl_variable" href="classmat3.html#af330dacb197ed05c279b4fa8974eac50">data</a>[1][2] &lt;&lt; <span class="stringliteral">&quot;]\n&quot;</span>;</div>
+<div class="line"><a id="l00048" name="l00048"></a><span class="lineno">   48</span>    out &lt;&lt; <span class="stringliteral">&quot;[&quot;</span> &lt;&lt; m.<a class="code hl_variable" href="classmat3.html#af330dacb197ed05c279b4fa8974eac50">data</a>[2][0] &lt;&lt; <span class="stringliteral">&quot;, &quot;</span> &lt;&lt; m.<a class="code hl_variable" href="classmat3.html#af330dacb197ed05c279b4fa8974eac50">data</a>[2][1] &lt;&lt; <span class="stringliteral">&quot;, &quot;</span> &lt;&lt; m.<a class="code hl_variable" href="classmat3.html#af330dacb197ed05c279b4fa8974eac50">data</a>[2][2] &lt;&lt; <span class="stringliteral">&quot;]&quot;</span>;</div>
+<div class="line"><a id="l00049" name="l00049"></a><span class="lineno">   49</span>    <span class="keywordflow">return</span> out;</div>
+<div class="line"><a id="l00050" name="l00050"></a><span class="lineno">   50</span>}</div>
+</div>
+<div class="line"><a id="l00051" name="l00051"></a><span class="lineno">   51</span> </div>
+<div class="foldopen" id="foldopen00058" data-start="{" data-end="}">
+<div class="line"><a id="l00058" name="l00058"></a><span class="lineno"><a class="line" href="_tarefa2_8cpp.html#af90134c2effe2994c56b484f4ea068ee">   58</a></span>std::ostream&amp; <a class="code hl_function" href="_tarefa2_8cpp.html#af383c2d94ac32aad3f4930cc693684e0">operator&lt;&lt;</a>(std::ostream&amp; out, <span class="keyword">const</span> <a class="code hl_class" href="classmat4.html">mat4</a>&amp; m) {</div>
+<div class="line"><a id="l00059" name="l00059"></a><span class="lineno">   59</span>    out &lt;&lt; <span class="stringliteral">&quot;[&quot;</span> &lt;&lt; m.<a class="code hl_variable" href="classmat4.html#a4691486c3c0c0c65982ddc75be6ea2ec">data</a>[0][0] &lt;&lt; <span class="stringliteral">&quot;, &quot;</span> &lt;&lt; m.<a class="code hl_variable" href="classmat4.html#a4691486c3c0c0c65982ddc75be6ea2ec">data</a>[0][1] &lt;&lt; <span class="stringliteral">&quot;, &quot;</span> &lt;&lt; m.<a class="code hl_variable" href="classmat4.html#a4691486c3c0c0c65982ddc75be6ea2ec">data</a>[0][2] &lt;&lt; <span class="stringliteral">&quot;, &quot;</span> &lt;&lt; m.<a class="code hl_variable" href="classmat4.html#a4691486c3c0c0c65982ddc75be6ea2ec">data</a>[0][3] &lt;&lt; <span class="stringliteral">&quot;]\n&quot;</span>;</div>
+<div class="line"><a id="l00060" name="l00060"></a><span class="lineno">   60</span>    out &lt;&lt; <span class="stringliteral">&quot;[&quot;</span> &lt;&lt; m.<a class="code hl_variable" href="classmat4.html#a4691486c3c0c0c65982ddc75be6ea2ec">data</a>[1][0] &lt;&lt; <span class="stringliteral">&quot;, &quot;</span> &lt;&lt; m.<a class="code hl_variable" href="classmat4.html#a4691486c3c0c0c65982ddc75be6ea2ec">data</a>[1][1] &lt;&lt; <span class="stringliteral">&quot;, &quot;</span> &lt;&lt; m.<a class="code hl_variable" href="classmat4.html#a4691486c3c0c0c65982ddc75be6ea2ec">data</a>[1][2] &lt;&lt; <span class="stringliteral">&quot;, &quot;</span> &lt;&lt; m.<a class="code hl_variable" href="classmat4.html#a4691486c3c0c0c65982ddc75be6ea2ec">data</a>[1][3] &lt;&lt; <span class="stringliteral">&quot;]\n&quot;</span>;</div>
+<div class="line"><a id="l00061" name="l00061"></a><span class="lineno">   61</span>    out &lt;&lt; <span class="stringliteral">&quot;[&quot;</span> &lt;&lt; m.<a class="code hl_variable" href="classmat4.html#a4691486c3c0c0c65982ddc75be6ea2ec">data</a>[2][0] &lt;&lt; <span class="stringliteral">&quot;, &quot;</span> &lt;&lt; m.<a class="code hl_variable" href="classmat4.html#a4691486c3c0c0c65982ddc75be6ea2ec">data</a>[2][1] &lt;&lt; <span class="stringliteral">&quot;, &quot;</span> &lt;&lt; m.<a class="code hl_variable" href="classmat4.html#a4691486c3c0c0c65982ddc75be6ea2ec">data</a>[2][2] &lt;&lt; <span class="stringliteral">&quot;, &quot;</span> &lt;&lt; m.<a class="code hl_variable" href="classmat4.html#a4691486c3c0c0c65982ddc75be6ea2ec">data</a>[2][3] &lt;&lt; <span class="stringliteral">&quot;]\n&quot;</span>;</div>
+<div class="line"><a id="l00062" name="l00062"></a><span class="lineno">   62</span>    out &lt;&lt; <span class="stringliteral">&quot;[&quot;</span> &lt;&lt; m.<a class="code hl_variable" href="classmat4.html#a4691486c3c0c0c65982ddc75be6ea2ec">data</a>[3][0] &lt;&lt; <span class="stringliteral">&quot;, &quot;</span> &lt;&lt; m.<a class="code hl_variable" href="classmat4.html#a4691486c3c0c0c65982ddc75be6ea2ec">data</a>[3][1] &lt;&lt; <span class="stringliteral">&quot;, &quot;</span> &lt;&lt; m.<a class="code hl_variable" href="classmat4.html#a4691486c3c0c0c65982ddc75be6ea2ec">data</a>[3][2] &lt;&lt; <span class="stringliteral">&quot;, &quot;</span> &lt;&lt; m.<a class="code hl_variable" href="classmat4.html#a4691486c3c0c0c65982ddc75be6ea2ec">data</a>[3][3] &lt;&lt; <span class="stringliteral">&quot;]&quot;</span>;</div>
+<div class="line"><a id="l00063" name="l00063"></a><span class="lineno">   63</span>    <span class="keywordflow">return</span> out;</div>
+<div class="line"><a id="l00064" name="l00064"></a><span class="lineno">   64</span>}</div>
+</div>
+<div class="line"><a id="l00065" name="l00065"></a><span class="lineno">   65</span> </div>
+<div class="line"><a id="l00066" name="l00066"></a><span class="lineno">   66</span> </div>
+<div class="foldopen" id="foldopen00067" data-start="{" data-end="}">
+<div class="line"><a id="l00067" name="l00067"></a><span class="lineno"><a class="line" href="_tarefa2_8cpp.html#ae66f6b31b5ad750f1fe042a706a4e3d4">   67</a></span><span class="keywordtype">int</span> <a class="code hl_function" href="_tarefa2_8cpp.html#ae66f6b31b5ad750f1fe042a706a4e3d4">main</a>() {</div>
+<div class="line"><a id="l00069" name="l00069"></a><span class="lineno">   69</span>    <a class="code hl_class" href="classvec2.html">vec2</a> a(1.0, 2.0);</div>
+<div class="line"><a id="l00070" name="l00070"></a><span class="lineno">   70</span>    <a class="code hl_class" href="classvec2.html">vec2</a> b(3.0, 4.0);</div>
+<div class="line"><a id="l00071" name="l00071"></a><span class="lineno">   71</span>    <a class="code hl_class" href="classvec2.html">vec2</a> sum = a + b;</div>
+<div class="line"><a id="l00072" name="l00072"></a><span class="lineno">   72</span>    <a class="code hl_class" href="classvec2.html">vec2</a> product = a * 2.0;</div>
+<div class="line"><a id="l00073" name="l00073"></a><span class="lineno">   73</span> </div>
+<div class="line"><a id="l00074" name="l00074"></a><span class="lineno">   74</span>    std::cout &lt;&lt; <span class="stringliteral">&quot;Vec2 Test:&quot;</span> &lt;&lt; std::endl;</div>
+<div class="line"><a id="l00075" name="l00075"></a><span class="lineno">   75</span>    std::cout &lt;&lt; <span class="stringliteral">&quot;a: &quot;</span> &lt;&lt; a &lt;&lt; std::endl;</div>
+<div class="line"><a id="l00076" name="l00076"></a><span class="lineno">   76</span>    std::cout &lt;&lt; <span class="stringliteral">&quot;b: &quot;</span> &lt;&lt; b &lt;&lt; std::endl;</div>
+<div class="line"><a id="l00077" name="l00077"></a><span class="lineno">   77</span>    std::cout &lt;&lt; <span class="stringliteral">&quot;Sum: &quot;</span> &lt;&lt; sum &lt;&lt; std::endl;</div>
+<div class="line"><a id="l00078" name="l00078"></a><span class="lineno">   78</span>    std::cout &lt;&lt; <span class="stringliteral">&quot;Product: &quot;</span> &lt;&lt; product &lt;&lt; std::endl;</div>
+<div class="line"><a id="l00079" name="l00079"></a><span class="lineno">   79</span> </div>
+<div class="line"><a id="l00081" name="l00081"></a><span class="lineno">   81</span>    <a class="code hl_class" href="classvec4.html">vec4</a> c(1.0, 2.0, 3.0, 4.0);</div>
+<div class="line"><a id="l00082" name="l00082"></a><span class="lineno">   82</span>    <a class="code hl_class" href="classvec4.html">vec4</a> d(5.0, 6.0, 7.0, 8.0);</div>
+<div class="line"><a id="l00083" name="l00083"></a><span class="lineno">   83</span>    <a class="code hl_class" href="classvec4.html">vec4</a> sum2 = c + d;</div>
+<div class="line"><a id="l00084" name="l00084"></a><span class="lineno">   84</span>    <a class="code hl_class" href="classvec4.html">vec4</a> product2 = c * 2.0;</div>
+<div class="line"><a id="l00085" name="l00085"></a><span class="lineno">   85</span> </div>
+<div class="line"><a id="l00086" name="l00086"></a><span class="lineno">   86</span>    std::cout &lt;&lt; <span class="stringliteral">&quot;Vec4 Test:&quot;</span> &lt;&lt; std::endl;</div>
+<div class="line"><a id="l00087" name="l00087"></a><span class="lineno">   87</span>    std::cout &lt;&lt; <span class="stringliteral">&quot;c: &quot;</span> &lt;&lt; c &lt;&lt; std::endl;</div>
+<div class="line"><a id="l00088" name="l00088"></a><span class="lineno">   88</span>    std::cout &lt;&lt; <span class="stringliteral">&quot;d: &quot;</span> &lt;&lt; d &lt;&lt; std::endl;</div>
+<div class="line"><a id="l00089" name="l00089"></a><span class="lineno">   89</span>    std::cout &lt;&lt; <span class="stringliteral">&quot;Sum: &quot;</span> &lt;&lt; sum2 &lt;&lt; std::endl;</div>
+<div class="line"><a id="l00090" name="l00090"></a><span class="lineno">   90</span>    std::cout &lt;&lt; <span class="stringliteral">&quot;Product: &quot;</span> &lt;&lt; product2 &lt;&lt; std::endl;</div>
+<div class="line"><a id="l00091" name="l00091"></a><span class="lineno">   91</span> </div>
+<div class="line"><a id="l00092" name="l00092"></a><span class="lineno">   92</span>    <a class="code hl_class" href="classmat2.html">mat2</a> m2_example(1, 2, 3, 4);</div>
+<div class="line"><a id="l00093" name="l00093"></a><span class="lineno">   93</span>    <a class="code hl_class" href="classmat3.html">mat3</a> m3_example(1, 2, 3, 4, 5, 6, 7, 8, 9);</div>
+<div class="line"><a id="l00094" name="l00094"></a><span class="lineno">   94</span>    <a class="code hl_class" href="classmat4.html">mat4</a> m4_example(1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16);</div>
+<div class="line"><a id="l00095" name="l00095"></a><span class="lineno">   95</span> </div>
+<div class="line"><a id="l00097" name="l00097"></a><span class="lineno">   97</span>    <a class="code hl_class" href="classvec2.html">vec2</a> v2_example(2, 3);</div>
+<div class="line"><a id="l00098" name="l00098"></a><span class="lineno">   98</span>    <a class="code hl_class" href="classvec4.html">vec4</a> v4_example(1, 2, 3, 4);</div>
+<div class="line"><a id="l00099" name="l00099"></a><span class="lineno">   99</span> </div>
+<div class="line"><a id="l00101" name="l00101"></a><span class="lineno">  101</span>    <a class="code hl_class" href="classmat2.html">mat2</a> sum_mat2 = m2_example + m2_example;</div>
+<div class="line"><a id="l00102" name="l00102"></a><span class="lineno">  102</span>    <a class="code hl_class" href="classmat3.html">mat3</a> sum_mat3 = m3_example + m3_example;</div>
+<div class="line"><a id="l00103" name="l00103"></a><span class="lineno">  103</span>    <a class="code hl_class" href="classmat4.html">mat4</a> sum_mat4 = m4_example + m4_example;</div>
+<div class="line"><a id="l00104" name="l00104"></a><span class="lineno">  104</span> </div>
+<div class="line"><a id="l00106" name="l00106"></a><span class="lineno">  106</span>    <a class="code hl_class" href="classvec2.html">vec2</a> result_vec2 = m2_example * v2_example;</div>
+<div class="line"><a id="l00107" name="l00107"></a><span class="lineno">  107</span>    <a class="code hl_class" href="classvec4.html">vec4</a> result_vec4 = m4_example * v4_example;</div>
+<div class="line"><a id="l00108" name="l00108"></a><span class="lineno">  108</span> </div>
+<div class="line"><a id="l00109" name="l00109"></a><span class="lineno">  109</span>    <span class="comment">// Impressão dos resultados</span></div>
+<div class="line"><a id="l00110" name="l00110"></a><span class="lineno">  110</span>    std::cout &lt;&lt; <span class="stringliteral">&quot;Soma de matrizes 2x2:\n&quot;</span> &lt;&lt; sum_mat2 &lt;&lt; <span class="stringliteral">&quot;\n&quot;</span>;</div>
+<div class="line"><a id="l00111" name="l00111"></a><span class="lineno">  111</span>    std::cout &lt;&lt; <span class="stringliteral">&quot;Soma de matrizes 3x3:\n&quot;</span> &lt;&lt; sum_mat3 &lt;&lt; <span class="stringliteral">&quot;\n&quot;</span>;</div>
+<div class="line"><a id="l00112" name="l00112"></a><span class="lineno">  112</span>    std::cout &lt;&lt; <span class="stringliteral">&quot;Soma de matrizes 4x4:\n&quot;</span> &lt;&lt; sum_mat4 &lt;&lt; <span class="stringliteral">&quot;\n&quot;</span>;</div>
+<div class="line"><a id="l00113" name="l00113"></a><span class="lineno">  113</span>    std::cout &lt;&lt; <span class="stringliteral">&quot;Multiplicação matriz 2x2 por vetor:\n&quot;</span> &lt;&lt; result_vec2 &lt;&lt; <span class="stringliteral">&quot;\n&quot;</span>;</div>
+<div class="line"><a id="l00114" name="l00114"></a><span class="lineno">  114</span>    std::cout &lt;&lt; <span class="stringliteral">&quot;Multiplicação matriz 4x4 por vetor:\n&quot;</span> &lt;&lt; result_vec4 &lt;&lt; <span class="stringliteral">&quot;\n&quot;</span>;</div>
+<div class="line"><a id="l00115" name="l00115"></a><span class="lineno">  115</span> </div>
+<div class="line"><a id="l00116" name="l00116"></a><span class="lineno">  116</span>    <span class="keywordflow">return</span> 0;</div>
+<div class="line"><a id="l00117" name="l00117"></a><span class="lineno">  117</span>}</div>
+</div>
+<div class="line"><a id="l00118" name="l00118"></a><span class="lineno">  118</span> </div>
+<div class="ttc" id="a_tarefa2_8cpp_html_ae66f6b31b5ad750f1fe042a706a4e3d4"><div class="ttname"><a href="_tarefa2_8cpp.html#ae66f6b31b5ad750f1fe042a706a4e3d4">main</a></div><div class="ttdeci">int main()</div><div class="ttdef"><b>Definição</b> <a href="_tarefa2_8cpp_source.html#l00067">Tarefa2.cpp:67</a></div></div>
+<div class="ttc" id="a_tarefa2_8cpp_html_af383c2d94ac32aad3f4930cc693684e0"><div class="ttname"><a href="_tarefa2_8cpp.html#af383c2d94ac32aad3f4930cc693684e0">operator&lt;&lt;</a></div><div class="ttdeci">std::ostream &amp; operator&lt;&lt;(std::ostream &amp;out, const vec2 &amp;v)</div><div class="ttdoc">Esta função imprimir vetores 2D.</div><div class="ttdef"><b>Definição</b> <a href="_tarefa2_8cpp_source.html#l00011">Tarefa2.cpp:11</a></div></div>
+<div class="ttc" id="aclassmat2_html"><div class="ttname"><a href="classmat2.html">mat2</a></div><div class="ttdoc">classe que implementa matriz 2d e seus metodos</div><div class="ttdef"><b>Definição</b> <a href="matvec_8h_source.html#l00043">matvec.h:43</a></div></div>
+<div class="ttc" id="aclassmat2_html_a9fb5cc9e6bfc7e3e0031c147952ea46d"><div class="ttname"><a href="classmat2.html#a9fb5cc9e6bfc7e3e0031c147952ea46d">mat2::data</a></div><div class="ttdeci">double data[2][2]</div><div class="ttdef"><b>Definição</b> <a href="matvec_8h_source.html#l00045">matvec.h:45</a></div></div>
+<div class="ttc" id="aclassmat3_html"><div class="ttname"><a href="classmat3.html">mat3</a></div><div class="ttdoc">classe que implementa matriz 3d e seus metodos</div><div class="ttdef"><b>Definição</b> <a href="matvec_8h_source.html#l00055">matvec.h:55</a></div></div>
+<div class="ttc" id="aclassmat3_html_af330dacb197ed05c279b4fa8974eac50"><div class="ttname"><a href="classmat3.html#af330dacb197ed05c279b4fa8974eac50">mat3::data</a></div><div class="ttdeci">double data[3][3]</div><div class="ttdef"><b>Definição</b> <a href="matvec_8h_source.html#l00057">matvec.h:57</a></div></div>
+<div class="ttc" id="aclassmat4_html"><div class="ttname"><a href="classmat4.html">mat4</a></div><div class="ttdoc">classe que implementa matriz 4d e seus metodos</div><div class="ttdef"><b>Definição</b> <a href="matvec_8h_source.html#l00067">matvec.h:67</a></div></div>
+<div class="ttc" id="aclassmat4_html_a4691486c3c0c0c65982ddc75be6ea2ec"><div class="ttname"><a href="classmat4.html#a4691486c3c0c0c65982ddc75be6ea2ec">mat4::data</a></div><div class="ttdeci">double data[4][4]</div><div class="ttdef"><b>Definição</b> <a href="matvec_8h_source.html#l00069">matvec.h:69</a></div></div>
+<div class="ttc" id="aclassvec2_html"><div class="ttname"><a href="classvec2.html">vec2</a></div><div class="ttdoc">classe que implementa vetor de 2 valores e suas fun��es</div><div class="ttdef"><b>Definição</b> <a href="matvec_8h_source.html#l00008">matvec.h:8</a></div></div>
+<div class="ttc" id="aclassvec2_html_a77fcc56ac7af5cee53b8ca789dacac1f"><div class="ttname"><a href="classvec2.html#a77fcc56ac7af5cee53b8ca789dacac1f">vec2::y</a></div><div class="ttdeci">double y</div><div class="ttdef"><b>Definição</b> <a href="matvec_8h_source.html#l00010">matvec.h:10</a></div></div>
+<div class="ttc" id="aclassvec2_html_ac38b8dcc3bc5eb2b4fb6971638af64d1"><div class="ttname"><a href="classvec2.html#ac38b8dcc3bc5eb2b4fb6971638af64d1">vec2::x</a></div><div class="ttdeci">double x</div><div class="ttdef"><b>Definição</b> <a href="matvec_8h_source.html#l00010">matvec.h:10</a></div></div>
+<div class="ttc" id="aclassvec4_html"><div class="ttname"><a href="classvec4.html">vec4</a></div><div class="ttdoc">classe que implementa vetor de 4 valores(4d) e seus metodos</div><div class="ttdef"><b>Definição</b> <a href="matvec_8h_source.html#l00026">matvec.h:26</a></div></div>
+<div class="ttc" id="aclassvec4_html_a33b4fabb2c9b0fa89af92b86db82c16f"><div class="ttname"><a href="classvec4.html#a33b4fabb2c9b0fa89af92b86db82c16f">vec4::w</a></div><div class="ttdeci">double w</div><div class="ttdef"><b>Definição</b> <a href="matvec_8h_source.html#l00028">matvec.h:28</a></div></div>
+<div class="ttc" id="aclassvec4_html_a680c373b827044fe641d812f143e2075"><div class="ttname"><a href="classvec4.html#a680c373b827044fe641d812f143e2075">vec4::z</a></div><div class="ttdeci">double z</div><div class="ttdef"><b>Definição</b> <a href="matvec_8h_source.html#l00028">matvec.h:28</a></div></div>
+<div class="ttc" id="aclassvec4_html_ab3da8438358ac40c404ac4eec23019c6"><div class="ttname"><a href="classvec4.html#ab3da8438358ac40c404ac4eec23019c6">vec4::y</a></div><div class="ttdeci">double y</div><div class="ttdef"><b>Definição</b> <a href="matvec_8h_source.html#l00028">matvec.h:28</a></div></div>
+<div class="ttc" id="aclassvec4_html_adfb7f5a598e9cbc80b2bd350e8a2f735"><div class="ttname"><a href="classvec4.html#adfb7f5a598e9cbc80b2bd350e8a2f735">vec4::x</a></div><div class="ttdeci">double x</div><div class="ttdef"><b>Definição</b> <a href="matvec_8h_source.html#l00028">matvec.h:28</a></div></div>
+<div class="ttc" id="amatvec_8h_html"><div class="ttname"><a href="matvec_8h.html">matvec.h</a></div></div>
+</div><!-- fragment --></div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+Gerado por&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8
+</small></address>
+</body>
+</html>
